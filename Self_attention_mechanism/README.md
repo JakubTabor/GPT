@@ -9,3 +9,5 @@
 
 # What we implemented here is a decoder, because it's decoding language, where we need to mask with tril matrix, so the tokens from the future never talk to the past
 * Because they would give away the answer
+* If we por example build the sentiment analysis with a transformer, we may have all tokens talk to each other fully
+* In that case we will use encoder block, which means that we just need to delete the masking part of our code
