@@ -11,3 +11,9 @@
 * Because they would give away the answer
 * If we por example build the sentiment analysis with a transformer, we may have all tokens talk to each other fully
 * In that case we will use encoder block, which means that we just need to delete the masking part of our code
+
+# In our code we use self-attention, but also exist cross-attention, whats the difference?
+* In self-attention keys, queries and values comes from one source - x, so this tokens are self-attending
+* But in encoder, decoder transformers, we can have a case when queries are produced from x, but keys and values come from whole separate external source
+* Por example from encoder blocks, that encode some context, that we would like to condition on
+* So cross-attention is used when, there is separate source of tokens we'd like to pull informations from into our tokens 
