@@ -5,6 +5,7 @@
   # Feed-forward based on per token level, so once self-attention, which is communication, gather all data it need to think on that data individually
 
 # Very deep neural networks suffer from optimization issues, so we need to introduce residual connections
+![](https://github.com/JakubTabor/GPT/blob/main/Images/Residual_connection.png)
 * Basically it means that we transform the data, but then we have skip connection with addition from the previous features
 * So we go from inputs to targets via residual pathway and we are free to fork-off from it to perform the computations
 * Then project back to residual pathwayvia addition 
