@@ -8,5 +8,7 @@
 ![](https://github.com/JakubTabor/GPT/blob/main/Images/Residual_connection.png)
 * Basically it means that we transform the data, but then we have skip connection with addition from the previous features
 * So we go from inputs to targets via residual pathway and we are free to fork-off from it to perform the computations
-* Then project back to residual pathwayvia addition 
+* Then project back to residual pathwayvia addition
+* It is useful during backpropagation, because addition distributes gradients equally to both of its branches, that feed the input
+* So it allow the gradients to have straight way that goes directly from supervision to input
   
