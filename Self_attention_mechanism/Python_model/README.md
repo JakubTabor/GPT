@@ -11,4 +11,13 @@
 * Then project back to residual pathwayvia addition
 * It is useful during backpropagation, because addition distributes gradients equally to both of its branches, that feed the input
 * So it allow the gradients to have straight way that goes directly from supervision to input
-  
+
+# I introduce Layer-Norm, which is similar to Batch Normalization
+* We just do normalization across rows, not columns
+* Also we don't distinguished between training and test, we also don't need buffers
+* Because the computation do not span across the examples
+
+# Size of Layer-Norm is n_embed, so 32
+* When Layer-Norm is normalizing our features, the mean and variance is taken over 32 numbers
+* So batch and time act as batch-dimensions, this is like per token transformation, that normalizes the features
+* And make them unit mean and unit gaussian at initialization
