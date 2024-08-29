@@ -5,11 +5,16 @@
 * We want to have 8-dim self-attention n_embd/4
 * So we have four 8-dim vectors,(4, n_embd/4) which gives us original number 32
 
-# Multi-head attention allows the model to  attend to information from different representation at different positions. With a single attention head, averaging inhibits this
 # In other way we can call it group convolution
+
 ![](https://github.com/JakubTabor/GPT/blob/main/Images/convolutions_vs_group_convolutions.png)
 
+# Multi-head attention allows the model to  attend to information from different representation at different positions. With a single attention head, averaging inhibits this
 
+#
+#
+#
+# 
 # Feed-forward is little single layer followed by relu non-linearity
 * We went way to fast to calculate logits, so tokens look at each other buy don't have much time to think on what they found from the other tokens
 * Its called sequentially after self-attention, so it self-attend then it feed-forward 
