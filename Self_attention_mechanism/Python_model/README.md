@@ -5,6 +5,10 @@
 * We want to have 8-dim self-attention n_embd/4
 * So we have four 8-dim vectors,(4, n_embd/4) which gives us original number 32
 
+![](https://github.com/JakubTabor/GPT/blob/main/Images/convolutions_vs_group_convolutions.png)
+
+# In other way we can call it group convolution
+
 # Feed-forward is little single layer followed by relu non-linearity
 * We went way to fast to calculate logits, so tokens look at each other buy don't have much time to think on what they found from the other tokens
 * Its called sequentially after self-attention, so it self-attend then it feed-forward 
