@@ -1,8 +1,15 @@
-  # Feed-forward is little single layer followed by relu non-linearity
-  * We went way to fast to calculate logits, so tokens look at each other buy don't have much time to think on what they found from the other tokens
-  * Its called sequentially after self-attention, so it self-attend then it feed-forward 
-  
-  # Feed-forward based on per token level, so once self-attention, which is communication, gather all data it need to think on that data individually
+# Now we are gonna take a look at Multi-Head Attention
+# It is applying multiple attentions in parallel, then concatenating there results in channel-dim (-1)
+* The original single-attention have have head size n_embd 32 
+* And we instead of having one communication channel, we have four of them 
+* We want to have 8-dim self-attention n_embd/4
+* So we have four 8-dim vectors,(4, n_embd/4) which gives us original number 32
+
+# Feed-forward is little single layer followed by relu non-linearity
+* We went way to fast to calculate logits, so tokens look at each other buy don't have much time to think on what they found from the other tokens
+* Its called sequentially after self-attention, so it self-attend then it feed-forward 
+
+# Feed-forward based on per token level, so once self-attention, which is communication, gather all data it need to think on that data individually
 
 # Very deep neural networks suffer from optimization issues, so we need to introduce residual connections
 ![](https://github.com/JakubTabor/GPT/blob/main/Images/Residual_connection.png)
