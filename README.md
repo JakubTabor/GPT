@@ -6,3 +6,6 @@
 # Position embedding part
 ![](https://github.com/JakubTabor/GPT/blob/main/Images/Nano_GPT/text_pos_embed.png)
 ![](https://github.com/JakubTabor/GPT/blob/main/Images/Nano_GPT/Position_embeding.png)
+
+# Multi-head Self-attention and LayerNorm
+![](https://github.com/JakubTabor/GPT/blob/main/Images/Nano_GPT/LayerNorm_and_multiHeadAttention.png)
