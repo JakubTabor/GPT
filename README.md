@@ -18,3 +18,5 @@
 
 # Feed Forward 
 ![](https://github.com/JakubTabor/GPT/blob/main/Images/Nano_GPT/feed_forward.png)
+# Feed Forward in python code
+![](https://github.com/JakubTabor/GPT/blob/main/Images/Nano_GPT/FeedForward_Py.png)
