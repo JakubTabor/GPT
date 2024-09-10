@@ -15,3 +15,6 @@
 ![](https://github.com/JakubTabor/GPT/blob/main/Images/Nano_GPT/LayerNorm_Py.png)
 # LayerNorm in use
 ![](https://github.com/JakubTabor/GPT/blob/main/Images/Nano_GPT/Block_Py.png)
+
+# Feed Forward 
+![](https://github.com/JakubTabor/GPT/blob/main/Images/Nano_GPT/feed_forward.png)
